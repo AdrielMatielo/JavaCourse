@@ -9,6 +9,9 @@
 
 ###English###
 13 - Enumeration and composition
-14 - inheritance and polymorphism
-15 - exception handling
-16 - chass game 
+
+14 - Inheritance and polymorphism
+
+15 - Exception handling
+
+16 - Chess 
