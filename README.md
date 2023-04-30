@@ -1,8 +1,11 @@
 ###Portugues###
 13 - enumeração e composição
+
 14 - herança e polimorfismo
+
 15 - Tratamento de excessão
-16 - Jogo de xadres
+
+16 - Jogo de xadrez
 
 ###English###
 13 - Enumeration and composition
