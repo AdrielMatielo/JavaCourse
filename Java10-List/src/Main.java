@@ -17,6 +17,11 @@ public class Main {
             System.out.println("Employee #"+(i+1)+":");
             System.out.print("Id: ");
             int id = sc.nextInt();
+            while(hasId(vect, id)){
+                System.out.println("ID already taken, please try again: ");
+                System.out.print("Id: ");
+                id = sc.nextInt();
+            }
             sc.nextLine();
             System.out.print("Name: ");
             String name = sc.nextLine();
@@ -41,5 +46,9 @@ public class Main {
         System.out.println("List of employees:");
         for (Employee x: vect)
             System.out.println(x.toString());
+    }
+    public static boolean hasId(List<Employee> list, int id){
+        Employee ID = list.stream().filter(x -> x.getId() == id).findFirst().orElse(null);
+        return ID != null;
     }
 }
