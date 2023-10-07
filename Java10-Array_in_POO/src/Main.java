@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+import Exercise.AverageEven;
 import Exercise.Heights;
 import Exercise.Negatives;
 import Exercise.SumArray;
@@ -13,6 +14,7 @@ public class Main {
             System.out.println("1 - negatives");
             System.out.println("2 - sum array");
             System.out.println("3 - OOP array");
+            System.out.println("4 - Average even numbers");
 
             System.out.print("inform the exercise: ");
             alternative = sc.nextInt();
@@ -22,6 +24,7 @@ public class Main {
             case 1 -> new Negatives();
             case 2 -> new SumArray();
             case 3 -> new Heights();
+            case 4 -> new AverageEven();
             default -> System.out.println("Error!!");
         }
     }
